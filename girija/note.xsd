@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/note" xmlns:tns="http://www.example.org/note" elementFormDefault="qualified">
+ <element name="note" type="tns:note"></element>
+     <complexType name="note">
+    	<sequence>
+    		<element name="author" type="string" maxOccurs="unbounded" minOccurs="0"></element>
+    		<element name="title" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="publisher" type="string" maxOccurs="1" minOccurs="0"></element>
+    		<element name="price" type="integer" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+</schema>
